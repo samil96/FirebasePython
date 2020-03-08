@@ -29,7 +29,7 @@ const filter = () => {
       <img src="https://www.ebizfiling.com/wp-content/uploads/2017/12/images_20-3.jpg" class="card-img-top section-talent__img" alt="Foto de perfil">
       <div class="card-body section-talent__cont-icons">
         <h5 class="card-title text-center">Num Placa: ${doc.data().COD_PLACA}</h5>
-        <h6 class="card-subtitle mb-3 text-center">Cargga util: ${doc.data().CARGA_UTIL}</h6>
+        <h6 class="card-subtitle mb-3 text-center">Carga útil: ${doc.data().CARGA_UTIL}</h6>
         
         <h6 class="card-text my-2">Marca del auto: ${doc.data().MARCA}.</h6>
         <div class="text-center">
