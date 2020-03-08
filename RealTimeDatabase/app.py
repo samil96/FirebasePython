@@ -1,38 +1,21 @@
-import pyrebase
+from firebase import firebase
 
-config = {
-	"apiKey": "",
-    "authDomain": "",
-    "databaseURL": "",
-    "projectId": "",
-    "storageBucket": "",
-    "messagingSenderId": ""
-}
+firebase = firebase.FirebaseApplication('https://prevencionvial-7bfee.firebaseio.com/', None)
+data = {'name': 'Lesly  Samaritano',
+        'reporte':'video.mp4',
+        }
 
-firebase = pyrebase.initialize_app(config)
+result = firebase.get('/prevencionvial-7bfee/Conductores/', '')
 
-db = firebase.database()
 
-from flask import *
+from flask import Flask, redirect, url_for, render_template
 
 app = Flask(__name__)
 
-@app.route('/', methods=['GET', 'POST'])
-def basic():
-	if request.method == 'POST':
-		if request.form['submit'] == 'add':
+@app.route('/')
 
-			name = request.form['name']
-			db.child("todo").push(name)
-			todo = db.child("todo").get()
-			to = todo.val()
-			return render_template('index.html', t=to.values())
-		elif request.form['submit'] == 'delete':
-			db.child("todo").remove()
-		return render_template('index.html')
-	return render_template('index.html')
+def mostrar():
+        return render_template("index.html", content=result)
 
 if __name__ == '__main__':
-	app.run(debug=True)
-
-
+        app.run()

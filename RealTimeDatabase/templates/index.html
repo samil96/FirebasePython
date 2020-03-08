@@ -9,27 +9,25 @@
 </head>
 <body>
 	<nav class="navbar navbar-default">
-		<h1>ToDoList</h1>
+		<h1>Reportes</h1>
 	</nav>
 	<div class="jumbotron">
-		<form class="form-group" action="/" method="post">
-			<label for="name">Enter all the tasks to be performed</label>
-			<input type="text" name="name" class="form-control"><br>
-			<button class="btn btn-primary" type="submit" name="submit" value="add">Submit</button>
-			<button class="btn btn-danger" type="submit" name="submit" value="delete">Delete</button>
-		</form>
+		<p>{{content}}</p>
 		
 	</div>
 
 	<div class="container-fluid">
-		{% for l in t %}
-			<ul class="list-group">
-				<li class="list-group-item">
-					{{l}}
-				</li>
-			</ul>
-		{% endfor %}
+
 	</div>
 
 </body>
+<!-- The core Firebase JS SDK is always required and must be listed first -->
+<script src="/__/firebase/7.10.0/firebase-app.js"></script>
+
+<!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+<script src="/__/firebase/7.10.0/firebase-analytics.js"></script>
+
+<!-- Initialize Firebase -->
+<script src="/__/firebase/init.js"></script>
 </html>
