@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Admin</title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="shortcut icon" href="assets\images\zeus.jpeg" type="image/x-icon">
+  <!-- Google fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Montserrat|Open+Sans:600&display=swap" rel="stylesheet">
+  <!-- Estilos de Bootstrap -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <!-- Esctilos css -->
+  <link rel="stylesheet" href="styles/style.css">
+</head>
+
+<body>
+  <nav class="navbar">
+ 
+  </nav>
+
+  <div class="container-fluid font-two text-center pt-5">
+    <p class="section-talent__txt">Busca tu conductor</p>
+  </div>
+  <div class="container">
+    <form class="form-inline my-4 justify-content-center">
+      <input id="searcher" type="text" class="section-talent__searcher font-two col-10 col-md-5 form-control px-4" placeholder="Numero de placa">
+      <div class="col-2 col-md-1 form-control section-talent__btn-search text-center"><i class="fas fa-search"></i></div>
+    </form>
+    <div id="conductor" class="row mt-1 mt-md-5 justify-content-center mb-5">
+    </div>
+  </div>
+  <footer class="container-fluid footer py-4">
+    <div class="text-center">
+      <h3 class="footer__txt pb-3 font-two">Síguenos en nuestras redes</h3>
+      <div class="section-talent__icons mx-3"><a href="https://www.facebook.com/HackSpacePeru/" target="_blank" class="section-talent__link"><i class="fab fa-facebook-f"></i></a></div>
+      <div class="section-talent__icons mx-3"><a href="https://www.instagram.com/hackspaceboost/?hl=es-la" target="_blank" class="section-talent__link"><i class="fab fa-instagram"></i></a></div>
+      <div class="section-talent__icons mx-3"><a href="https://www.linkedin.com/company/hack-space/about/" target="_blank" class="section-talent__link"><i class="fab fa-linkedin-in"></i></a></div>
+      <div class="section-talent__icons mx-3"><a href="https://github.com/HackSpacePeru" target="_blank" class="section-talent__link"><i class="fab fa-github"></i></a></div>
+    </div>
+  </footer>
+  <!-- Scroll Reveal -->
+  <script src="https://unpkg.com/scrollreveal"></script>
+  <script src="js\animation.js"></script>
+  <!-- Bootstrap -->
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
+    </script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous">
+    </script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
+    </script>
+  <!-- Load all styles fontawesome -->
+  <script defer src="https://use.fontawesome.com/releases/v5.9.0/js/all.js"></script>
+  <!-- firestore-->
+  <script src="https://www.gstatic.com/firebasejs/7.2.3/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/7.2.3/firebase-firestore.js"></script>
+  <!-- Firebase -->
+  <script src="js\firebase.js"></script>
+</body>
+
+</html>
